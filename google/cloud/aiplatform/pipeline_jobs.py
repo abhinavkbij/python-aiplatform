@@ -217,7 +217,7 @@ class PipelineJob(base.VertexAiStatefulResource):
             raise ValueError(
                 "Generated job ID: {} is illegal as a Vertex pipelines job ID. "
                 "Expecting an ID following the regex pattern "
-                '"[a-z][-a-z0-9]{{0,127}}"'.format(job_id)
+                '"[a-z][-a-z0-9]{{0,127}}"'.format(self.job_id)
             )
 
         if enable_caching is not None:
